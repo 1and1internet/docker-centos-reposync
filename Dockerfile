@@ -4,4 +4,6 @@ MAINTAINER James Eckersall <james.eckersall@gmail.com>
 
 RUN yum install -y createrepo wget
 
-ENTRYPOINT [ "reposync" ]
+VOLUME [ "/config", "/repos" ]
+
+#ENTRYPOINT [ "reposync" ]
