@@ -1,0 +1,7 @@
+version: '2'
+services:
+  docker-centos-reposync:
+    build: .
+    image: jameseckersall/centos-reposync
+    environment:
+      DEBUG: "no"
