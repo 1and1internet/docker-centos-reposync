@@ -6,4 +6,4 @@ RUN yum install -y createrepo wget
 
 VOLUME [ "/config", "/repos" ]
 
-#ENTRYPOINT [ "reposync" ]
+ENTRYPOINT [ "/opt/reposync/sync_all.sh" ]
